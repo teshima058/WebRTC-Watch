@@ -15,7 +15,12 @@
   </div>
   
   <!---- socket ※自分のシグナリングサーバーに合わせて変更してください ------>
-  <script src="document.getElementById('serverURL').value + '/socket.io/socket.io.js'"></script>
+  <!-- <script src="document.getElementById('serverURL').value + '/socket.io/socket.io.js'"></script> -->
+  <script>
+    var script = document.createElement('script');
+    script.src = document.getElementById('serverURL').value + '/socket.io/socket.io.js'; //ファイルパス
+    document.body.appendChild(script);
+  </script>
 
   <!-- <script src="three.min.js"></script>
   <script src="OrbitControls.js"></script>
