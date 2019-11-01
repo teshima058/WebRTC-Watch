@@ -13,10 +13,12 @@
   </div>
   
   <!---- socket ※自分のシグナリングサーバーに合わせて変更してください ------>
-  <script src="https://5474bef0.ngrok.io/socket.io/socket.io.js"></script>
-  <script src="three.min.js"></script>
+  <script>
+      src=document.getElementById('serverURL').value + " /socket.io/socket.io.js"
+  </script> 
+  <!-- <script src="three.min.js"></script>
   <script src="OrbitControls.js"></script>
-  <script src="theta-view.js"></script>
+  <script src="theta-view.js"></script> -->
   <script>
   //var localVideo = document.getElementById('local-video');
   var remoteVideo = document.getElementById('remote-video');
